@@ -1,0 +1,72 @@
+module LogStackSr
+{
+    imports {
+        Base
+    }
+
+    recipe Make Two-Log Stack
+    {
+        Log=2,
+        SheetRope=2,
+
+        Result:LogStacksSr2,
+        Time:60.0,
+        Category:Carpentry,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Three-Log Stack
+    {
+        Log=3,
+        SheetRope=2,
+
+        Result:LogStacksSr3,
+        Time:60.0,
+        Category:Carpentry,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Four-Log Stack
+    {
+        Log=4,
+        SheetRope=2,
+
+        Result:LogStacksSr4,
+        Time:60.0,
+        Category:Carpentry,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Unstack Logs
+    {
+        LogStacksSr2,
+
+        Result:Log=2,
+        Time:60.0,
+        OnCreate:Recipe.OnCreate.SplitLogStackSr,
+        Category:Carpentry,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Unstack Logs
+    {
+        LogStacksSr3,
+
+        Result:Log=3,
+        Time:60.0,
+        OnCreate:Recipe.OnCreate.SplitLogStackSr,
+        Category:Carpentry,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Unstack Logs
+    {
+        LogStacksSr4,
+
+        Result:Log=4,
+        Time:60.0,
+        OnCreate:Recipe.OnCreate.SplitLogStackSr,
+        Category:Carpentry,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+}

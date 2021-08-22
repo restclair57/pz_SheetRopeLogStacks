@@ -1,0 +1,30 @@
+module LogStackSr
+{
+  imports {
+    Base
+  }
+
+  item LogStacksSr2 {
+    Weight	=	6,
+    Type	=	Normal,
+    DisplayName	=	Two Logs Stack,
+    Icon	=	Logs2,
+    WorldStaticModel = TwoLogsStack,
+  }
+
+  item LogStacksSr3 {
+    Weight	=	9,
+    Type	=	Normal,
+    DisplayName	=	Three Logs Stack,
+    Icon	=	Logs3,
+    WorldStaticModel = ThreeLogsStack,
+  }
+
+  item LogStacksSr4{
+    Weight	=	12,
+    Type	=	Normal,
+    DisplayName	=	Four Logs Stack,
+    Icon	=	Logs4,
+    WorldStaticModel = FourLogsStack,
+  }
+}
